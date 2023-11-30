@@ -1,0 +1,7 @@
+@media only screen and (min-width: 689px) {
+  /* Make the Now-Playing screen have a scrolling bottom section for the upcoming songs. */
+  #nowPlayingPage { display: flex; flex-direction: column; }
+  #nowPlayingPage > div { flex: auto; display: flex; flex-direction: column; overflow: hidden; }
+  .nowPlayingInfoContainer { flex: none; }
+  .playlistSection { flex: auto; overflow: auto; }
+}
