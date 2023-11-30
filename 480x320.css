@@ -1,0 +1,30 @@
+@media only screen {
+  /* Make the Now-Playing screen have a scrolling bottom section for the upcoming songs. */
+  #nowPlayingPage { display: flex; flex-direction: column; }
+  #nowPlayingPage > div { flex: auto; display: flex; flex-direction: column; overflow: hidden; }
+  .nowPlayingInfoContainer { flex: none; }
+  .playlistSection { flex: auto; overflow: auto; }
+
+  /* Make the screen work for 480x320 layout. */
+  .headerTabs { margin-top: initial; }
+  .headerButton { scale: .7; }
+  .pageTitleWithLogo { display: none; }
+  .skinHeader-withBackground { height: 70px; }
+  .skinHeader-withBackground .headerTop { height: 40px; box-sizing: border-box; padding: 0; }
+  .headerTabs .emby-tabs-slider { display: flex; justify-content: space-evenly; }
+  .headerTabs .emby-tabs-slider .emby-tab-button { padding: 0; height: 30px; text-align: center; line-height: 30px; }
+  .squareCard { width: 33.333333%; }
+  .nowPlayingPageImageContainer { position: absolute; left: -10px; }
+  .nowPlayingInfoContainer { position: relative; }
+  .nowPlayingInfoControls .infoContainer { padding-left: 70px; margin-right: 100px; }
+  .nowPlayingInfoControls .nowPlayingSecondaryButtons .volumecontrol { display: none; }
+  #nowPlayingPage .playlistSectionButton { display: none; } 
+  .nowPlayingButtonsContainer { scale: .75; height: 40px; position: absolute; top: 0; right: -40px; display: flex; flex-direction: column; }
+  .nowPlayingButtonsContainer .btnPlayPause { scale: .9; }
+  .nowPlayingButtonsContainer .btnRewind, .btnFastForward { display: none; }
+  .nowPlayingInfoContainerMedia { height: 65px; overflow-y: auto; }
+  .nowPlayingInfoContainerMedia .nowPlayingAlbum, .nowPlayingArtist { font-size: .85m; }
+  .appfooter .nowPlayingBarTop { height: 3.5em; }
+  .appfooter .nowPlayingBarTop .nowPlayingBarSecondaryText { font-size: .85em; }
+  .libraryPage:not(.noSecondaryNavPage) { padding-top: 3.5em !important; }
+}
